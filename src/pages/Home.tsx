@@ -37,14 +37,14 @@ const Home: React.FC = () => {
 
         <main>
           <div className="relative">
-            <div className="absolute -top-20 -left-20 w-64 h-64 bg-feminine-pink/10 rounded-full blur-3xl"></div>
+            <div className="absolute -left-20 w-64 h-64 bg-feminine-pink/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-feminine-purple/10 rounded-full blur-3xl"></div>
 
             <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
               <div className="flex flex-col items-center">
                 <div className="w-full max-w-md mx-auto">
                   <img
-                    src="https://images.unsplash.com/photo-1486480115419-c2c453a8222d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    src="https://bogota.gov.co/sites/default/files/styles/1050px/public/2024-09/carrera-de-la-mujer.png"
                     alt="Mujeres corriendo en una carrera"
                     className="w-full h-64 object-cover rounded-2xl shadow-lg mb-8"
                   />
