@@ -70,10 +70,12 @@ const Home: React.FC = () => {
                   <h2 className="text-2xl md:text-3xl font-bold text-feminine-purple font-feminine">
                     ¡Únete a una experiencia inolvidable!
                   </h2>
-                  <p className="text-gray-700 mb-6">
+                  <p className="text-gray-700 mb-6 text-lg mt-5">
                     Sé parte de este evento inspirador que celebra la fuerza,
-                    determinación y espíritu comunitario de las mujeres en los
-                    hermosos pueblos de Nobsa y Nazareth.
+                    determinación y espíritu comunitario de las mujeres en Nobsa
+                    y en el barrio Nazareth. La carrera atlética femenina tiene
+                    como objetivo promover la salud, el deporte y la igualdad de
+                    género.
                   </p>
                 </div>
 
