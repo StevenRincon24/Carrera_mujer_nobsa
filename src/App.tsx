@@ -1,9 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import EventDescription from './pages/EventDescription';
-import Nobsa from './pages/Nobsa';
-import Nazareth from './pages/Nazareth';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import EventDescription from "./pages/EventDescription";
+import Nobsa from "./pages/Nobsa";
+import Nazareth from "./pages/Nazareth";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/event-description" element={<EventDescription />} />
         <Route path="/nobsa" element={<Nobsa />} />
         <Route path="/nazareth" element={<Nazareth />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
