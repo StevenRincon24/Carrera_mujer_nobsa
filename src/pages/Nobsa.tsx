@@ -101,11 +101,13 @@ const Nobsa: React.FC = () => {
               Mapa del Recorrido
             </h2>
             <div className="flex justify-center">
-              <img
-                src="../src/imagenes/Nobsa.png"
-                alt="Mapa del recorrido"
-                className="w-full h-100 object-cover rounded-lg shadow-lg"
-              />
+              <iframe
+                className="w-full h-96 rounded-lg shadow-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6260.105278795482!2d-72.78953612319345!3d5.770039197955675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a1e3a81e6a1e1%3A0xa0a0a0a0a0a0a0a0!2sNobsa%2C%20Boyac%C3%A1!5e0!3m2!1ses-419!2sco!4v1700000000000!5m2!1ses-419!2sco"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
