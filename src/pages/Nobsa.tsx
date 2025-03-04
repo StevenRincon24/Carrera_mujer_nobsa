@@ -101,13 +101,11 @@ const Nobsa: React.FC = () => {
               Mapa del Recorrido
             </h2>
             <div className="flex justify-center">
-              <iframe
-                className="w-full h-96 rounded-lg shadow-lg"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6260.105278795482!2d-72.78953612319345!3d5.770039197955675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a1e3a81e6a1e1%3A0xa0a0a0a0a0a0a0a0!2sNobsa%2C%20Boyac%C3%A1!5e0!3m2!1ses-419!2sco!4v1700000000000!5m2!1ses-419!2sco"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <img
+                src="https://cultura-nobsa-imagenes.s3.us-east-2.amazonaws.com/Nobsa.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAYU7HFVPT6OPTHL7Y%2F20250304%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20250304T170357Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMiJGMEQCIG13FASIYh4nrT%2F%2B%2B5zq2MYhrp7AZ2NU32MXOCy0MbR6AiAu7rbAv%2FxMeBRg7Or4z3N4t13YiYiA2LCPSAJaNDPDqyrxAgjy%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAEaDDU5NDgwMDkxMzM4MyIM%2BD7heZViIl3KKaLhKsUCGdYyvDwRfQFA4c5jDkIvbr8lj%2BVHnz%2F4%2FlyITZesak%2BnaNgro5YJG%2Bpi2yFdyOiOBw6Xkbl1YQ7dvl6KXOW2HgXN7JRMwkruFLs4llZBPNISTineCyfeB1sEUiIc3wRfysYpp9QQxrueUSZ51aqc2c6U96DTL4wDW8ypw3bknkR2%2FGlItBn33Os55qnN88HNszjNzWtcTCfVfJE3%2FLSeeaNL74phsQ8Ic4CI5nkv7zAImsnWI9TYfQBN09m1%2FuzPQCqugrc2a1nYM28JLaBRkb0KLdrzQVe7KamFv0WQO7O0g3rXZXJIF7h%2BSHSYFO%2BIpU6uJvGlkkwJNVPty3lCLWA9rUnvI5BKw21AcoPVDIiDu4KBkuZYXn9KhJMzAA%2BQMdmwWL%2BBP7IAPQsFbPcaXDdj7lMcx7Zpa3oXidxo9p3uFQ8H1jDH5Jy%2BBjq0AlhozS7Z8QnM2O0z7fp6njjUmTR5q2Xk4KgeZ1rOL4Nu77s%2FfulB9vDUdqN3nOY5CDTEcfgJUEISWmVOoHftTrLvg4zmaj3cD1K7KPs3%2B%2BLJO82lkYY0nn53%2BlU6Z9cOIzh0v93RC9bozJ%2BU093kic%2FR%2BjJubDumlye5j9IhOTT0iBkPD4b%2Bl9rKcrRNmpPYGB4es%2ByBFSVIxW3adRjz%2F5uokUg%2B0m%2FIteGioZdKoYBb7n7qUWOzimkrSgBGG88%2Fs0rDJSHAv3whWECC7s0GTcABeDrkcd6up4inqFkGp6M0XRVRJGv0hv%2FaAm%2B0S4oZJDWU19Cl679xBaeUPr1DBTAr4%2BMUn%2BSa6QQO%2FTTW%2Fjj4tA62aYEnfzuXKY6RS3YBQJR5Q5MLJIIFHn2HIACOFN9Y4%2B%2Bw&X-Amz-Signature=d62d14513b917c37c5eabee5ccb864aa3adc944834d692b89231429644e34514&X-Amz-SignedHeaders=host&response-content-disposition=inline"
+                alt="Mapa del recorrido"
+                className="w-full h-100 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
