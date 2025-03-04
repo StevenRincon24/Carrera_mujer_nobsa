@@ -30,7 +30,6 @@ const categories = [
     km: "5 km",
     vueltas: "3 vueltas",
     genero: "Femenino",
-
     link: "https://forms.gle/example4",
   },
   {
@@ -38,7 +37,6 @@ const categories = [
     km: "1.5 km",
     vueltas: "1 vuelta",
     genero: "Femenino",
-
     link: "https://forms.gle/example5",
   },
   {
@@ -46,45 +44,52 @@ const categories = [
     km: "3 km",
     vueltas: "2 vueltas",
     genero: "Masculino",
-
     link: "https://forms.gle/example6",
   },
 ];
 
-const Nobsa: React.FC = () => {
+const Nazareth: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-feminine-lavender via-white to-feminine-lightPink">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-6 py-12">
         <Button
           variant="tertiary"
           onClick={() => navigate("/")}
-          className="mb-8 inline-flex items-center"
+          className="mb-8 flex items-center text-rose-600"
         >
           <ArrowLeft size={18} className="mr-2" /> Volver al Inicio
         </Button>
 
-        <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-feminine-pink mb-6 text-center">
-            Carrera de la mujer Nobsa
+        <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
+          <h1 className="text-5xl font-extrabold text-feminine-pink mb-8 text-center">
+            Carrera de la Mujer - Barrio Nazareth
           </h1>
 
           {/* Sección de Categorías */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-feminine-purple mb-4 text-center">
-              Categorías de la Barrio Nazareth
+            <h2 className="text-3xl font-semibold text-feminine-purple mb-6 text-center">
+              Categorías de Participación
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-feminine-lavender/30 p-6 rounded-xl shadow-md text-center"
+                  className="bg-white border-2 border-rose-300 p-6 rounded-xl shadow-md text-center transition transform hover:scale-105"
                 >
-                  <h3 className="font-bold text-lg mb-2">{category.name}</h3>
-                  <p className="mb-1">Distancia: {category.km}</p>
-                  <p className="mb-1">Vueltas: {category.vueltas}</p>
-                  <p className="mb-1">Genero: {category.genero}</p>
+                  <h3 className="font-bold text-xl text-rose-700 mb-2">
+                    {category.name}
+                  </h3>
+                  <p className="text-purple-800 mb-1">
+                    Distancia: {category.km}
+                  </p>
+                  <p className="text-purple-800 mb-1">
+                    Vueltas: {category.vueltas}
+                  </p>
+                  <p className="text-purple-800 mb-1">
+                    Género: {category.genero}
+                  </p>
                   <a
                     href={category.link}
                     target="_blank"
@@ -97,10 +102,25 @@ const Nobsa: React.FC = () => {
               ))}
             </div>
           </div>
+
+          {/* Sección de Información */}
+          <div className="mt-12">
+            <h2 className="text-3xl font-semibold text-purple-700 mb-4 text-center">
+              Recorrido y Ubicación
+            </h2>
+            <div className="flex justify-center">
+              <img
+                src="https://i.postimg.cc/ydSQLJ6B/Nazareth.png"
+                height="100"
+                className="rounded-lg shadow-md border-2 border-rose-400"
+                alt="Mapa del recorrido de la carrera en Nazareth"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Nobsa;
+export default Nazareth;

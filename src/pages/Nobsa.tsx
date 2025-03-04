@@ -102,7 +102,7 @@ const Nobsa: React.FC = () => {
             </h2>
             <div className="flex justify-center">
               <img
-                src="../src/imagenes/Nobsa.png"
+                src="https://i.postimg.cc/QN1Y5WnJ/Nobsa.png"
                 height="100"
                 className="rounded-lg shadow-lg"
                 alt="Mapa del recorrido de la carrera de la mujer Nobsa"
