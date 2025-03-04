@@ -2,30 +2,48 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import AnimatedText from "../components/AnimatedText";
 import Button from "../components/Button";
-import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion"; // Importamos Framer Motion
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
-  const title = "Segunda Carrera de la MUJER";
-  const titleWords = title.split(" ");
+  const title = ["Segunda", "Carrera", "de", "la", "MUJER"];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-feminine-lavender via-white to-feminine-lightPink">
       <div className="container mx-auto px-4 py-12">
-        <header className="text-center mb-16">
-          <div className="inline-block">
-            {titleWords.map((word, index) => (
-              <React.Fragment key={index}>
-                {index > 0 && <span> </span>}
-                <AnimatedText
-                  text={word}
-                  delay={index * 200}
-                  animation="rebound"
-                  className="text-5xl md:text-7xl font-bold text-feminine-pink"
-                />
-              </React.Fragment>
-            ))}
+        <header className="text-center">
+          <div className="inline-flex gap-4 flex-wrap justify-center leading-[1.3]">
+            {title.map((word, index) => {
+              if (word === "MUJER") {
+                return (
+                  <motion.span
+                    key={index}
+                    className="text-5xl md:text-7xl font-bold mx-2"
+                    animate={{
+                      color: ["#FF69B4", "#c2c2c2", "#9370DB"],
+                    }}
+                    transition={{
+                      repeat: Infinity,
+                      duration: 20,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    {word}
+                  </motion.span>
+                );
+              } else {
+                return (
+                  <AnimatedText
+                    key={index}
+                    text={word}
+                    delay={index * 200}
+                    animation="rebound"
+                    className="text-5xl md:text-7xl font-bold text-feminine-pink mx-2"
+                  />
+                );
+              }
+            })}
           </div>
 
           <div className="mt-6 opacity-0 animate-[fadeIn_1s_ease-in_forwards_1.5s]">
@@ -51,7 +69,7 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="text-center mb-10">
-                  <h2 className="text-2xl md:text-3xl font-bold text-feminine-purple mb-4">
+                  <h2 className="text-2xl md:text-3xl font-bold text-feminine-purple font-feminine">
                     ¡Únete a una experiencia inolvidable!
                   </h2>
                   <p className="text-gray-700 mb-6">
@@ -63,25 +81,17 @@ const Home: React.FC = () => {
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center w-full">
                   <Button
-                    variant="primary"
-                    onClick={() => navigate("/event-description")}
-                    className="flex items-center justify-center gap-2"
-                  >
-                    Descripción del Evento <ArrowRight size={18} />
-                  </Button>
-
-                  <Button
                     variant="secondary"
                     onClick={() => navigate("/nobsa")}
                   >
-                    Descubre Nobsa
+                    Inscripciones Carrera Nobsa Centro
                   </Button>
 
                   <Button
                     variant="tertiary"
                     onClick={() => navigate("/nazareth")}
                   >
-                    Visita Nazareth
+                    Inscripciones Nobsa Barrio Nazareth
                   </Button>
                 </div>
               </div>
