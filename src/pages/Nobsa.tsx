@@ -1,18 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import { ArrowLeft, Landmark, Utensils, Camera } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const categories = [
   {
     name: "7 - 14 años",
-    km: "3 km",
+    km: "1.5 km",
     vueltas: "1 vuelta",
     link: "https://forms.gle/example1",
   },
   {
     name: "15 - 28 años",
-    km: "5 km",
+    km: "3 km",
     vueltas: "2 vueltas",
     link: "https://forms.gle/example2",
   },

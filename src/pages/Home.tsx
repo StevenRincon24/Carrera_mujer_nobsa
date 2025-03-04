@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import AnimatedText from "../components/AnimatedText";
 import Button from "../components/Button";
-import { motion } from "framer-motion"; // Importamos Framer Motion
+import { motion } from "framer-motion";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -20,9 +20,7 @@ const Home: React.FC = () => {
                   <motion.span
                     key={index}
                     className="text-5xl md:text-7xl font-bold mx-2"
-                    animate={{
-                      color: ["#FF69B4", "#c2c2c2", "#9370DB"],
-                    }}
+                    animate={{ color: ["#FF69B4", "#c2c2c2", "#9370DB"] }}
                     transition={{
                       repeat: Infinity,
                       duration: 20,
@@ -98,11 +96,84 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-16 text-center">
-            <p className="text-feminine-pink font-medium">
-              ¡Las inscripciones abrirán pronto! Mantente atenta para más
-              detalles.
-            </p>
+          {/* Sección de Premiación */}
+          <div className="relative mt-5 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className=" text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-feminine-purple ">
+                🎖 Premiación 🎖
+              </h2>
+              <p className="text-lg text-feminine-pink max-w-2xl mx-auto  mt-4 font-semibold mb-4">
+                🏆 Se otorgará premio a las tres primeras personas por categoría
+                en las diferentes carreras Nobsa y Nazareth.
+              </p>
+              <p className="text-lg text-feminine-purple font-semibold mb-4">
+                🏆 En la categoría profesional, solamente se otorgan premios al
+                primer y segundo puesto.
+              </p>
+              <p className="text-lg text-feminine-pink font-semibold">
+                🎟️ Se harán rifas en la categoría "Sin Límites" (personas en
+                condición de discapacidad).
+              </p>
+            </div>
+          </div>
+
+          <div className="relative bg-white/80 mt-5 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-feminine-purple">
+                📜 Reglamentación
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-feminine-lightPink p-6 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold">🏁 Reglas Generales</h3>
+                <ul className="list-none pl-4 mt-2 text-gray-700">
+                  <li>🏃‍♂️ La carrera termina cuando el atleta cruza la meta.</li>
+                  <li>
+                    📊 El orden de llegada es determinado por quien cruce
+                    primero.
+                  </li>
+                  <li>
+                    ⏱️ El tiempo se mide desde el disparo de salida hasta la
+                    meta.
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-feminine-purple/20 p-6 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold">🏃 Reglas de Competencia</h3>
+                <ul className="list-none pl-4 mt-2 text-gray-700">
+                  <li>🚦 Salida: Nadie debe cruzar antes del disparo.</li>
+                  <li>🛤️ Ruta: Se debe correr en el trayecto designado.</li>
+                  <li>🚫 No se permite obstruir a otros atletas.</li>
+                </ul>
+              </div>
+              <div className="bg-feminine-lightPink p-6 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold">⚠️ Reglas de Penalización</h3>
+                <ul className="list-none pl-4 mt-2 text-gray-700">
+                  <li>
+                    🚷 Obstrucción: Puede resultar en penalización o
+                    descalificación.
+                  </li>
+                  <li>
+                    📍 Abandono de ruta: Descalificación si no hay autorización.
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-feminine-purple/20 p-6 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold">
+                  🚨 Reglas de Descalificación
+                </h3>
+                <ul className="list-none pl-4 mt-2 text-gray-700">
+                  <li>
+                    🧪 Dopaje: Uso de sustancias prohibidas resulta en
+                    descalificación.
+                  </li>
+                  <li>🙅 Conducta antideportiva no será tolerada.</li>
+                  <li>
+                    ❌ Incumplir reglas de competencia conlleva descalificación.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </main>
       </div>
