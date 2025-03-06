@@ -27,8 +27,8 @@ const categories = [
   },
   {
     name: "50 años en adelante",
-    km: "5 km",
-    vueltas: "3 vueltas",
+    km: "1.5 km",
+    vueltas: "1 vuelta",
     genero: "Femenino",
     link: "https://forms.gle/F5LTyzgMRagovYJ6A",
   },
@@ -40,7 +40,7 @@ const categories = [
     link: "https://forms.gle/156ZtcB1mT7XCAvy9",
   },
   {
-    name: "Sin Límite (Personas discapacitadas) ",
+    name: "Sin Límite (Personas en condición de discapacidad) ",
     km: "1.5 km",
     vueltas: "1 vuelta",
     genero: "Femenino",
@@ -94,7 +94,7 @@ const Nobsa: React.FC = () => {
                 >
                   <h3 className="font-bold text-lg mb-2">{category.name}</h3>
                   <p className="mb-1">
-                    📏 <strong>Distancia:</strong> {category.km} km
+                    📏 <strong>Distancia:</strong> {category.km} 
                   </p>
                   <p className="mb-1">
                     🔄 <strong>Vueltas:</strong> {category.vueltas}

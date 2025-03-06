@@ -1,8 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import AnimatedText from "../components/AnimatedText";
 import Button from "../components/Button";
-import { motion } from "framer-motion";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -61,16 +59,37 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center w-full">
-                  <Button variant="tertiary" onClick={() => navigate("/nobsa")}>
-                    Inscripciones Nobsa Centro
-                  </Button>
+                  <div className="flex flex-col items-center ">
+                    <h3>
+                      📅 <strong>Fecha:</strong> 14 de marzo
+                    </h3>
+                    <p className="mt-2">
+                      ⏰ <strong>Hora:</strong> Desde las 4:00 p.m
+                    </p>
+                    <Button
+                      className="mt-2"
+                      variant="tertiary"
+                      onClick={() => navigate("/nazareth")}
+                    >
+                      Inscripciones Nobsa Barrio Nazareth
+                    </Button>
+                  </div>
 
-                  <Button
-                    variant="tertiary"
-                    onClick={() => navigate("/nazareth")}
-                  >
-                    Inscripciones Nobsa Barrio Nazareth
-                  </Button>
+                  <div className="flex flex-col items-center">
+                    <h3>
+                      📅 <strong>Fecha:</strong> 15 de marzo
+                    </h3>
+                    <p className="mt-2">
+                      ⏰ <strong>Hora:</strong> Desde las 4:00 p.m
+                    </p>
+                    <Button
+                      className="mt-2"
+                      variant="tertiary"
+                      onClick={() => navigate("/nobsa")}
+                    >
+                      Inscripciones Nobsa Centro
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>

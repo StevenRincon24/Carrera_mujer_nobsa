@@ -27,8 +27,8 @@ const categories = [
   },
   {
     name: "50 años en adelante",
-    km: "5 km",
-    vueltas: "3 vueltas",
+    km: "1.5 km",
+    vueltas: "1 vuelta",
     genero: "Femenino",
     link: "https://forms.gle/BDcNgYVNzTVf6Qgd7",
   },
@@ -40,7 +40,7 @@ const categories = [
     link: "https://forms.gle/VLeBbdwdAC5RQXpU8",
   },
   {
-    name: "Sin Límite (Personas discapacitadas) ",
+    name: "Sin Límite (Personas en condición de discapacidad) ",
     km: "1.5 km",
     vueltas: "1 vuelta",
     genero: "Femenino",
