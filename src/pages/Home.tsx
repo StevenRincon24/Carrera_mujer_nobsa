@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-feminine-lavender via-white to-feminine-lightPink">
       <div className="container mx-auto px-4 py-12">
@@ -47,6 +46,8 @@ const Home: React.FC = () => {
                     ¡Únete a una experiencia inolvidable!
                   </h2>
                   <p className="text-gray-700 mb-6 text-lg mt-5">
+                    Gracias por ser parte de la II Carrera Atlética de la Mujer
+                    Nobsa 2025 <b>#NobsaEsMujer</b> <br />
                     Sé parte de este evento inspirador que celebra la fuerza,
                     determinación y espíritu comunitario de las mujeres en Nobsa
                     y en el barrio Nazareth. La carrera atlética femenina tiene
