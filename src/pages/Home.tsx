@@ -42,9 +42,13 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="text-center mb-10">
-                  <h2 className="text-2xl md:text-3xl font-bold text-feminine-purple font-feminine">
+                  <h2
+                    className="text-7xl md:text-5xl  text-feminine-purple font-betterlett"
+                    style={{ fontFamily: "Betterlett" }}
+                  >
                     ¡Únete a una experiencia inolvidable!
                   </h2>
+
                   <p className="text-gray-700 mb-6 text-lg mt-5">
                     Gracias por ser parte de la II Carrera Atlética de la Mujer
                     Nobsa 2025 <b>#NobsaEsMujer</b> <br />
