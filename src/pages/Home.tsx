@@ -62,7 +62,7 @@ const Home: React.FC = () => {
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center w-full">
                   <Button variant="tertiary" onClick={() => navigate("/nobsa")}>
-                    Inscripciones Carrera Nobsa Centro
+                    Inscripciones Nobsa Centro
                   </Button>
 
                   <Button
