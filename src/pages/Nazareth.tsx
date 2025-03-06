@@ -70,14 +70,21 @@ const Nazareth: React.FC = () => {
         </Button>
 
         <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
-          <h1 className="text-5xl font-extrabold text-feminine-pink mb-8 text-center">
-            Carrera de la Mujer - Barrio Nazareth
-          </h1>
+          <div className="flex justify-center mb-6">
+            <img
+              src="https://i.postimg.cc/JzFsnQ2q/Barrio-Nazareth.png"
+              alt="Carrera de la Mujer Nobsa"
+              className="rounded-lg shadow-lg w-full max-w-3xl"
+            />
+          </div>
 
           {/* Sección de Categorías */}
           <div className="mb-8">
-            <h2 className="text-3xl font-semibold text-feminine-purple mb-6 text-center">
-              Categorías de Participación
+            <h2
+              style={{ fontFamily: "Betterlett" }}
+              className="text-6xl  text-feminine-purple mb-4 text-center"
+            >
+              Categorías
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {categories.map((category, index) => (

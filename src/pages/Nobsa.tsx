@@ -72,7 +72,7 @@ const Nobsa: React.FC = () => {
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
             <img
-              src="../src/imagenes/Nobsa_Centro.png"
+              src="https://i.postimg.cc/qvqt4Fjq/Nobsa-Centro.png"
               alt="Carrera de la Mujer Nobsa"
               className="rounded-lg shadow-lg w-full max-w-3xl"
             />
