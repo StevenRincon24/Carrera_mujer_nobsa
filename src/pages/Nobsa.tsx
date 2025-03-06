@@ -9,7 +9,7 @@ const categories = [
     km: "1.5 km",
     vueltas: "1 vuelta",
     genero: "Femenino",
-    link: "https://forms.gle/example1",
+    link: "https://forms.gle/biqo62VL4MnvE2zK7",
   },
   {
     name: "15 - 28 años",

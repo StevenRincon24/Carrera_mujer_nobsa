@@ -13,36 +13,12 @@ const Home: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-feminine-lavender via-white to-feminine-lightPink">
       <div className="container mx-auto px-4 py-12">
         <header className="text-center">
-          <div className="inline-flex gap-4 flex-wrap justify-center leading-[1.3]">
-            {title.map((word, index) => {
-              if (word === "MUJER") {
-                return (
-                  <motion.span
-                    key={index}
-                    style={{ fontFamily: "Maitland Script" }}
-                    className="text-8xl md:text-8xl font-bold mx-2"
-                    animate={{ color: ["#FF69B4", "#c2c2c2", "#9370DB"] }}
-                    transition={{
-                      repeat: Infinity,
-                      duration: 20,
-                      ease: "easeInOut",
-                    }}
-                  >
-                    {word}
-                  </motion.span>
-                );
-              } else {
-                return (
-                  <AnimatedText
-                    key={index}
-                    text={word}
-                    delay={index * 200}
-                    animation="rebound"
-                    className="text-5xl md:text-7xl font-bold text-feminine-pink mx-2"
-                  />
-                );
-              }
-            })}
+          <div>
+            <img
+              src="https://i.postimg.cc/rprV8cTg/Cabezote-Web-Carrera-Mujer-04.png"
+              alt="Mujeres corriendo en una carrera"
+              className="w-full"
+            />
           </div>
 
           <div className="mt-6 opacity-0 animate-[fadeIn_1s_ease-in_forwards_1.5s]">
