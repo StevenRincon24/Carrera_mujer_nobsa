@@ -20,7 +20,7 @@ const Home: React.FC = () => {
                   <motion.span
                     key={index}
                     style={{ fontFamily: "Maitland Script" }}
-                    className="text-5xl md:text-7xl font-bold mx-2"
+                    className="text-8xl md:text-8xl font-bold mx-2"
                     animate={{ color: ["#FF69B4", "#c2c2c2", "#9370DB"] }}
                     transition={{
                       repeat: Infinity,
