@@ -40,7 +40,7 @@ const categories = [
     link: "https://forms.gle/VLeBbdwdAC5RQXpU8",
   },
   {
-    name: "Discapacidad",
+    name: "Sin Límite (Personas discapacitadas) ",
     km: "1.5 km",
     vueltas: "1 vuelta",
     genero: "Femenino",

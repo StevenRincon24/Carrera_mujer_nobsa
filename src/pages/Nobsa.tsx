@@ -40,7 +40,7 @@ const categories = [
     link: "https://forms.gle/156ZtcB1mT7XCAvy9",
   },
   {
-    name: "Discapacidad",
+    name: "Sin Límite (Personas discapacitadas) ",
     km: "1.5 km",
     vueltas: "1 vuelta",
     genero: "Femenino",
@@ -70,13 +70,19 @@ const Nobsa: React.FC = () => {
         </Button>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-feminine-pink mb-6 text-center">
+          <h1
+            style={{ fontFamily: "Betterlett" }}
+            className="text-5xl md:text-5xl text-feminine-pink mb-6 text-center font-family: 'Betterlett'"
+          >
             Carrera de la mujer Nobsa
           </h1>
 
           {/* Sección de Categorías */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-feminine-purple mb-4 text-center">
+            <h2
+              style={{ fontFamily: "Avenir" }}
+              className="text-3xl font-bold text-feminine-purple mb-4 text-center"
+            >
               Categorías de la Carrera
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -81,28 +81,35 @@ const Home: React.FC = () => {
 
           {/* Sección de Premiación */}
           <div className="relative mt-5 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
-            <div className=" text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-feminine-purple ">
-                🎖 Premiación 🎖
+            <div className="text-center">
+              <h2
+                className="text-5xl md:text-5xl text-feminine-purple"
+                style={{ fontFamily: "Betterlett" }}
+              >
+                🏅 Premiación 🏅
               </h2>
-              <p className="text-lg text-feminine-pink max-w-2xl mx-auto  mt-4 font-semibold mb-4">
-                🏆 Se otorgará premio a las tres primeras personas por categoría
-                en las diferentes carreras Nobsa y Nazareth.
+              <p className="text-lg text-feminine-pink max-w-2xl mx-auto mt-4 font-semibold mb-4">
+                🥇🥈🥉 Se entregarán premios a los tres primeros lugares en las
+                categorías: 7 a 14, 15 a 28, 29 a 50 y 50 en adelante, en ambas
+                competencias (Nobsa y Nazareth).
               </p>
               <p className="text-lg text-feminine-purple font-semibold mb-4">
-                🏆 En la categoría profesional, solamente se otorgan premios al
-                primer y segundo puesto.
+                🏆 En la categoría Élite, se premiará al primer 🥇 y segundo 🥈
+                puesto.
               </p>
               <p className="text-lg text-feminine-pink font-semibold">
-                🎟️ Se harán rifas en la categoría "Sin Límites" (personas en
-                condición de discapacidad).
+                🎟️ En la categoría "Sin Límites", se realizarán rifas entre los
+                participantes.
               </p>
             </div>
           </div>
 
           <div className="relative bg-white/80 mt-5 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-feminine-purple">
+              <h2
+                className="text-5xl md:text-5xl  text-feminine-purple"
+                style={{ fontFamily: "Betterlett" }}
+              >
                 📜 Reglamentación
               </h2>
             </div>
@@ -112,47 +119,78 @@ const Home: React.FC = () => {
                 <ul className="list-none pl-4 mt-2 text-gray-700">
                   <li>🏃‍♂️ La carrera termina cuando el atleta cruza la meta.</li>
                   <li>
-                    📊 El orden de llegada es determinado por quien cruce
-                    primero.
+                    📊 El orden de llegada es determinado por el orden en que
+                    los atletas cruzan la línea de meta.
                   </li>
                   <li>
-                    ⏱️ El tiempo se mide desde el disparo de salida hasta la
-                    meta.
+                    ⏱️ El tiempo se mide desde el disparo de salida hasta que el
+                    atleta cruza la línea de meta.
                   </li>
                 </ul>
               </div>
+
               <div className="bg-feminine-purple/20 p-6 rounded-xl shadow-lg">
-                <h3 className="text-xl font-bold">🏃 Reglas de Competencia</h3>
-                <ul className="list-none pl-4 mt-2 text-gray-700">
-                  <li>🚦 Salida: Nadie debe cruzar antes del disparo.</li>
-                  <li>🛤️ Ruta: Se debe correr en el trayecto designado.</li>
-                  <li>🚫 No se permite obstruir a otros atletas.</li>
-                </ul>
-              </div>
-              <div className="bg-feminine-lightPink p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold">⚠️ Reglas de Penalización</h3>
                 <ul className="list-none pl-4 mt-2 text-gray-700">
                   <li>
-                    🚷 Obstrucción: Puede resultar en penalización o
-                    descalificación.
+                    🚷 Si un atleta obstruye o interfiere con otro atleta, puede
+                    ser penalizado o descalificado.
                   </li>
                   <li>
-                    📍 Abandono de ruta: Descalificación si no hay autorización.
+                    📍 Si un atleta abandona la ruta designada sin autorización,
+                    puede ser descalificado.
                   </li>
                 </ul>
               </div>
+
               <div className="bg-feminine-purple/20 p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold">
                   🚨 Reglas de Descalificación
                 </h3>
                 <ul className="list-none pl-4 mt-2 text-gray-700">
                   <li>
-                    🧪 Dopaje: Uso de sustancias prohibidas resulta en
+                    🧪 El uso de cualquier sustancia psicoactiva es motivo de
                     descalificación.
                   </li>
-                  <li>🙅 Conducta antideportiva no será tolerada.</li>
                   <li>
-                    ❌ Incumplir reglas de competencia conlleva descalificación.
+                    🙅 Si un atleta se comporta de manera antideportiva, puede
+                    ser descalificado.
+                  </li>
+                  <li>
+                    ❌ Si un atleta incumple con alguna de las reglas de
+                    competencia, puede ser descalificado.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-feminine-lightPink p-6 rounded-xl shadow-lg">
+                <h3 className="text-xl font-bold">🏃 Reglas de Competencia</h3>
+                <ul className="list-none pl-4 mt-2 text-gray-700">
+                  <li>
+                    🚦 Salida: Los atletas deben permanecer detrás de la línea
+                    de salida hasta que se dispare el arma de salida.
+                  </li>
+                  <li>
+                    🛤️ Ruta: Los atletas deben correr por la ruta designada y no
+                    pueden abandonarla sin autorización.
+                  </li>
+                  <li>
+                    🚫 No se permite obstruir o interferir con otros atletas.
+                  </li>
+
+                  <li>
+                    🚫 No se permite recibir ayuda externa, como comida, bebida
+                    o equipo, durante la carrera.
+                  </li>
+
+                  <li>
+                    🎽 Los atletas deben utilizar equipo autorizado y no pueden
+                    llevar objetos peligrosos.
+                  </li>
+
+                  <li>
+                    🤝Se espera un comportamiento respetuoso hacia otros
+                    atletas, jueces y espectadores.
                   </li>
                 </ul>
               </div>
