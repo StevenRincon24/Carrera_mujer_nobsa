@@ -93,9 +93,15 @@ const Nobsa: React.FC = () => {
                   className="bg-feminine-lavender/30 p-6 rounded-xl shadow-md text-center"
                 >
                   <h3 className="font-bold text-lg mb-2">{category.name}</h3>
-                  <p className="mb-1">Distancia: {category.km}</p>
-                  <p className="mb-1">Vueltas: {category.vueltas}</p>
-                  <p className="mb-1">Género: {category.genero}</p>
+                  <p className="mb-1">
+                    📏 <strong>Distancia:</strong> {category.km} km
+                  </p>
+                  <p className="mb-1">
+                    🔄 <strong>Vueltas:</strong> {category.vueltas}
+                  </p>
+                  <p className="mb-1">
+                    🚻 <strong>Género:</strong> {category.genero}
+                  </p>
                   <a
                     href={category.link}
                     target="_blank"

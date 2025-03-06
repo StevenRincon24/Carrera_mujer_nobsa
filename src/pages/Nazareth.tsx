@@ -90,19 +90,17 @@ const Nazareth: React.FC = () => {
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-white border-2 border-rose-300 p-6 rounded-xl shadow-md text-center transition transform hover:scale-105"
+                  className="bg-feminine-lavender/30 p-6 rounded-xl shadow-md text-center"
                 >
-                  <h3 className="font-bold text-xl text-rose-700 mb-2">
-                    {category.name}
-                  </h3>
-                  <p className="text-purple-800 mb-1">
-                    Distancia: {category.km}
+                  <h3 className="font-bold text-lg mb-2">{category.name}</h3>
+                  <p className=" mb-1">
+                    📏 <strong> Distancia:</strong> {category.km}
                   </p>
-                  <p className="text-purple-800 mb-1">
-                    Vueltas: {category.vueltas}
+                  <p className="mb-1">
+                    🔄 <strong>Vueltas:</strong> {category.vueltas}
                   </p>
-                  <p className="text-purple-800 mb-1">
-                    Género: {category.genero}
+                  <p className="mb-1">
+                    🚻 <strong>Género:</strong> {category.genero}
                   </p>
                   <a
                     href={category.link}
@@ -119,14 +117,17 @@ const Nazareth: React.FC = () => {
 
           {/* Sección de Información */}
           <div className="mt-12">
-            <h2 className="text-3xl font-semibold text-purple-700 mb-4 text-center">
-              Recorrido y Ubicación
+            <h2
+              style={{ fontFamily: "Betterlett" }}
+              className="text-5xl text-feminine-purple mb-4 text-center"
+            >
+              Mapa del Recorrido
             </h2>
             <div className="flex justify-center">
               <img
                 src="https://i.postimg.cc/ydSQLJ6B/Nazareth.png"
                 height="100"
-                className="rounded-lg shadow-md border-2 border-rose-400"
+                className="rounded-lg shadow-lg"
                 alt="Mapa del recorrido de la carrera en Nazareth"
               />
             </div>
