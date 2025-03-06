@@ -110,7 +110,10 @@ const Nobsa: React.FC = () => {
 
           {/* Sección del Mapa del Recorrido */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-feminine-purple mb-4 text-center">
+            <h2
+              style={{ fontFamily: "Betterlett" }}
+              className="text-5xl text-feminine-purple mb-4 text-center"
+            >
               Mapa del Recorrido
             </h2>
             <div className="flex justify-center">
