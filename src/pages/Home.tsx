@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
-  const title = ["Segunda", "Carrera", "de", "la", "MUJER"];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-feminine-lavender via-white to-feminine-lightPink">
