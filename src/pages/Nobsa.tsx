@@ -51,7 +51,7 @@ const categories = [
     km: "3 km",
     vueltas: "2 vueltas",
     genero: "Masculino",
-    link: "https://forms.gle/example6",
+    link: "https://forms.gle/XRrgGXCNMxuXSo186",
   },
 ];
 
