@@ -9,6 +9,7 @@ export default {
           lightPink: "#FFC0CB",
           purple: "#9370DB",
           lavender: "#E6E6FA",
+          lightPink2: "#FFE0E5",
         },
       },
       fontFamily: {

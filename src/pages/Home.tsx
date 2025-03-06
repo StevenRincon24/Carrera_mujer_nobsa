@@ -61,10 +61,7 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-4 justify-center w-full">
-                  <Button
-                    variant="secondary"
-                    onClick={() => navigate("/nobsa")}
-                  >
+                  <Button variant="tertiary" onClick={() => navigate("/nobsa")}>
                     Inscripciones Carrera Nobsa Centro
                   </Button>
 
@@ -114,7 +111,7 @@ const Home: React.FC = () => {
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-feminine-lightPink p-6 rounded-xl shadow-lg">
+              <div className="bg-feminine-lightPink2 p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold">🏁 Reglas Generales</h3>
                 <ul className="list-none pl-4 mt-2 text-gray-700">
                   <li>🏃‍♂️ La carrera termina cuando el atleta cruza la meta.</li>
@@ -163,7 +160,7 @@ const Home: React.FC = () => {
                 </ul>
               </div>
 
-              <div className="bg-feminine-lightPink p-6 rounded-xl shadow-lg">
+              <div className="bg-feminine-lightPink2 p-6 rounded-xl shadow-lg">
                 <h3 className="text-xl font-bold">🏃 Reglas de Competencia</h3>
                 <ul className="list-none pl-4 mt-2 text-gray-700">
                   <li>
@@ -171,18 +168,16 @@ const Home: React.FC = () => {
                     de salida hasta que se dispare el arma de salida.
                   </li>
                   <li>
+                    🚫 No se permite obstruir o interferir con otros atletas.
+                  </li>
+                  <li>
                     🛤️ Ruta: Los atletas deben correr por la ruta designada y no
                     pueden abandonarla sin autorización.
                   </li>
                   <li>
-                    🚫 No se permite obstruir o interferir con otros atletas.
-                  </li>
-
-                  <li>
                     🚫 No se permite recibir ayuda externa, como comida, bebida
                     o equipo, durante la carrera.
                   </li>
-
                   <li>
                     🎽 Los atletas deben utilizar equipo autorizado y no pueden
                     llevar objetos peligrosos.

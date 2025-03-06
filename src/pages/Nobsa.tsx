@@ -70,20 +70,21 @@ const Nobsa: React.FC = () => {
         </Button>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
-          <h1
-            style={{ fontFamily: "Betterlett" }}
-            className="text-5xl md:text-5xl text-feminine-pink mb-6 text-center font-family: 'Betterlett'"
-          >
-            Carrera de la mujer Nobsa
-          </h1>
+          <div className="flex justify-center mb-6">
+            <img
+              src="../src/imagenes/Nobsa_Centro.png"
+              alt="Carrera de la Mujer Nobsa"
+              className="rounded-lg shadow-lg w-full max-w-3xl"
+            />
+          </div>
 
           {/* Sección de Categorías */}
           <div className="mb-8">
             <h2
-              style={{ fontFamily: "Avenir" }}
-              className="text-3xl font-bold text-feminine-purple mb-4 text-center"
+              style={{ fontFamily: "Betterlett" }}
+              className="text-6xl  text-feminine-purple mb-4 text-center"
             >
-              Categorías de la Carrera
+              Categorías
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {categories.map((category, index) => (
