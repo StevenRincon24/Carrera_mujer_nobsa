@@ -33,7 +33,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col items-center">
                 <div className="w-full max-w-md mx-auto">
                   <img
-                    src="https://bogota.gov.co/sites/default/files/styles/1050px/public/2024-09/carrera-de-la-mujer.png"
+                    src="https://freeimage.host/i/carrera.3KkGKCP"
                     alt="Mujeres corriendo en una carrera"
                     className="w-full h-64 object-cover rounded-2xl shadow-lg mb-8"
                   />
