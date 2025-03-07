@@ -33,7 +33,7 @@ const Home: React.FC = () => {
               <div className="flex flex-col items-center">
                 <div className="w-full max-w-md mx-auto">
                   <img
-              src="https://i.postimg.cc/rprV8cTg/Cabezote-Web-Carrera-Mujer-04.png"
+              src="https://i.postimg.cc/jS5z9Q2b/Carrera.jpg"
                     alt="Mujeres corriendo en una carrera"
                     className="w-full h-64 object-cover rounded-2xl shadow-lg mb-8"
                   />
