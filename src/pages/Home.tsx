@@ -32,12 +32,13 @@ const Home: React.FC = () => {
             <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto">
               <div className="flex flex-col items-center">
                 <div className="w-full max-w-md mx-auto">
-                  <img
-              src="https://i.postimg.cc/jS5z9Q2b/Carrera.jpg"
-                    alt="Mujeres corriendo en una carrera"
-                    className="w-full h-64 object-cover rounded-2xl shadow-lg mb-8"
-                  />
-                </div>
+  <img
+    src="https://i.postimg.cc/jS5z9Q2b/Carrera.jpg"
+    alt="Mujeres corriendo en una carrera"
+    className="w-full max-w-full object-contain rounded-2xl shadow-lg mb-8"
+  />
+</div>
+
 
                 <div className="text-center mb-10">
                   <h2
