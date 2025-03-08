@@ -17,11 +17,7 @@ const Home: React.FC = () => {
             />
           </div>
 
-          <div className="mt-6 opacity-0 animate-[fadeIn_1s_ease-in_forwards_1.5s]">
-            <p className="text-feminine-purple text-xl md:text-2xl font-medium">
-              Empoderando a las mujeres a través del deporte y la comunidad
-            </p>
-          </div>
+          
         </header>
 
         <main>
