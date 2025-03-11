@@ -102,14 +102,9 @@ const Nobsa: React.FC = () => {
                   <p className="mb-1">
                     🚻 <strong>Género:</strong> {category.genero}
                   </p>
-                  <a
-                    href={category.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow transition opacity-50 cursor-not-allowed pointer-events-none"
-                  >
-                    Inscribirse
-                  </a>
+                  <span className="inline-block mt-2 bg-gray-400 text-white font-semibold px-4 py-2 rounded-lg shadow opacity-70 cursor-not-allowed">
+                    Inscripciones Finalizadas
+                  </span>
                 </div>
               ))}
             </div>
