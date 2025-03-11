@@ -94,7 +94,7 @@ const Nobsa: React.FC = () => {
                 >
                   <h3 className="font-bold text-lg mb-2">{category.name}</h3>
                   <p className="mb-1">
-                    📏 <strong>Distancia:</strong> {category.km} 
+                    📏 <strong>Distancia:</strong> {category.km}
                   </p>
                   <p className="mb-1">
                     🔄 <strong>Vueltas:</strong> {category.vueltas}
@@ -106,7 +106,7 @@ const Nobsa: React.FC = () => {
                     href={category.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-feminine-purple transition"
+                    className="inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow transition opacity-50 cursor-not-allowed pointer-events-none"
                   >
                     Inscribirse
                   </a>

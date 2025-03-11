@@ -90,7 +90,7 @@ const Nazareth: React.FC = () => {
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="bg-feminine-lavender/30 p-6 rounded-xl shadow-md text-center"
+                  className="bg-feminine-lavender/30 p-6 rounded-xl shadow-md text-center "
                 >
                   <h3 className="font-bold text-lg mb-2">{category.name}</h3>
                   <p className=" mb-1">
@@ -106,7 +106,7 @@ const Nazareth: React.FC = () => {
                     href={category.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-feminine-purple transition"
+                    className="inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow transition opacity-50 cursor-not-allowed pointer-events-none"
                   >
                     Inscribirse
                   </a>
