@@ -102,7 +102,12 @@ const Nazareth: React.FC = () => {
                   <p className="mb-1">
                     🚻 <strong>Género:</strong> {category.genero}
                   </p>
-                  <a className="relative inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow transition opacity-50 cursor-not-allowed pointer-events-none overflow-hidden">
+                  <a
+                    className="inline-block mt-2 bg-feminine-pink text-white font-semibold px-4 py-2 rounded-lg shadow hover:bg-feminine-purple transition"
+                    href={category.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Inscribirse
                     <span className="absolute top-1/2 left-0 w-full bg-red-500 text-white text-xs font-bold py-1 transform -rotate-12 -translate-y-1/2 text-center">
                       Inscripciones cerradas
