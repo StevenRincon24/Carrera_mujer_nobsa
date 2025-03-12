@@ -109,9 +109,6 @@ const Nazareth: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     Inscribirse
-                    <span className="absolute top-1/2 left-0 w-full bg-red-500 text-white text-xs font-bold py-1 transform -rotate-12 -translate-y-1/2 text-center">
-                      Inscripciones cerradas
-                    </span>
                   </a>
                 </div>
               ))}
